@@ -1,0 +1,37 @@
+{
+  "name": "mental-health-support-agent",
+  "version": "1.0.0",
+  "description": "Multi-agent system for mental health support and crisis intervention",
+  "type": "module",
+  "main": "dist/index.js",
+  "scripts": {
+    "dev": "tsx src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "test": "tsx src/test-agent.ts",
+    "evaluate": "tsx src/evaluation/evaluate-agent.ts"
+  },
+  "keywords": [
+    "mental-health",
+    "ai-agents",
+    "healthcare",
+    "crisis-intervention",
+    "wellness"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.27.0",
+    "express": "^4.21.2",
+    "ws": "^8.18.0",
+    "zod": "^3.24.2",
+    "dotenv": "^16.4.5"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/node": "^20.16.11",
+    "@types/ws": "^8.5.13",
+    "tsx": "^4.19.1",
+    "typescript": "^5.6.3"
+  }
+}
